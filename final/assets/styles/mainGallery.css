@@ -179,16 +179,21 @@ img {
 
 .contentArea {
     display: grid;
-    grid-column: 4 / 6;
+    grid-column: 5 / 6;
     grid-row: 4 / 6;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: subgrid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 1rem;
 }
 
-.biographyWrapper {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
+.contentArea img{
+    max-width: 100%;
+    object-fit: cover;
+    display: block;
+    min-width: 0;
+    min-height: 0;
 }
+
 
 @media (max-width: 768px) {
 

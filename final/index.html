@@ -7,32 +7,38 @@
     <link rel="stylesheet" href="assets/styles/main.css">
 </head>
 <body>
-    <a href="#main_content" class="skip">skip to content</a>
-
     <main id="main_content">
-        <section class="contentContainer">
+        <!-- contentContainer is a vague name -->
+        <section class="contentContainer"> 
             <header class="intro">
-                <h1 class="hi">Hi my name is</h1>
-                <h1 class="firstName">Teddy</h1>
-                <h1 class="lastName">Franklin</h1>
+                <ul class="menu">
+                    <li><a href="index.html" class="home">Home</a></li>
+                    <li><a href="caseStudy.html" class="projects">Projects</a></li>
+                    <li><a href="gallery.html" class="artwork">Artwork</a></li>
+                    <li><a href="contact.html" class="contact">Contact</a></li>
+                </ul>
                 <div class="nameLine"></div>
             </header>
 
-            <nav class="navigationContainer">
-                <ul class="menu">
-                    <li><a class="home">Home</a></li>
-                    <li><a class="projects">Projects</a></li>
-                    <li><a class="artwork">Artwork</a></li>
-                    <li><a class="contact">Contact</a></li>
-                </ul>                
-            </nav>
+            <div class="navigationContainer">
+            </div>
 
-            <span class="about">
+            <div class="titleText">
+                <h1 class="studyHeaderTop">Homepage</h1>
+            </div>
+
+            <span class="selfPortrait">
                 <div class="portraitContainer">
-                    <img class="portrait">
+                    <img class="portrait" src="assets/images/image22.jpeg">
                 </div>
                 <div class="portraitBackground"></div>
-                <p class="biography">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum porta mauris nec interdum. Nulla ac facilisis orci, sit amet rutrum dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+            </span>
+            
+            <span class="contentArea">
+                <div class="biographyWrapper">
+                    <p class="biographyText">Hello! My name is Teddy Franklin and this is my portfolio site's homepage! I honestly don't have much to show here so apologies if this site is barren. Also Mr. Sinatra don't worry I will change this text for the final, I just need something here that isn't Lorem Ipsum and have trouble writing about myself in a serious way.</p>
+                </div>
+                
             </span>
         </section>
     </main>

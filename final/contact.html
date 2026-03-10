@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="assets/styles/mainContact.css">
+</head>
+<body>
+    <a href="#main_content" class="skip">skip to content</a>
+
+    <main id="main_content">
+        <!-- contentContainer is a vague name -->
+        <section class="contentContainer"> 
+            <header class="intro">
+                <ul class="menu">
+                    <li><a href="index.html" class="home">Home</a></li>
+                    <li><a href="caseStudy.html" class="projects">Projects</a></li>
+                    <li><a href="gallery.html" class="artwork">Artwork</a></li>
+                    <li><a href="contact.html" class="contact">Contact</a></li>
+                </ul>
+                <div class="nameLine"></div>
+            </header>
+
+            <div class="navigationContainer">
+            </div>
+
+            <div class="titleText">
+                <h1 class="studyHeaderTop">Contact</h1>
+            </div>
+
+            <div class="contentArea">
+                <form class="contactForm"novalidate aria-label="Contact form">
+                    <fieldset>
+                            <legend>Contact Form</legend>
+                        <label  for="firstName">
+                            Enter your first name
+                            <span class="required-label" aria-label="required">*</span>
+                        </label>
+                        <input  type="text" 
+                            id="firstName" 
+                            name="firstName"
+                            required
+                            aria-required="true"
+                            aria-invalid="false"
+                            aria-describedby="firstName-error">
+                        <span
+                            id="firstName-error"
+                            class="error-message"
+                            role="alert"
+                            aria-live="polite">
+                        </span>
+
+                        <label  for="lastName">
+                            Enter your last name
+                            <span class="required-label" aria-label="required">*</span>
+                        </label>
+                        <input  
+                            type="text" 
+                            id="lastName" 
+                            name="lastName"
+                            required
+                            aria-required="true"
+                            aria-invalid="false"
+                            aria-describedby="lastName-error">
+                        <span
+                            id="lastName-error"
+                            class="error-message"
+                            role="alert"
+                            aria-live="polite">
+                        </span>
+
+                        <label  for="email">
+                            Enter your email address
+                            <span class="required-label" aria-label="required">*</span>
+                        </label>
+                        <input  
+                            type="email" 
+                            id="email" 
+                            name="email"
+                            required
+                            aria-required="true"
+                            aria-invalid="false"
+                            aria-describedby="email-error"
+                            autocomplete="email">
+                        <span
+                            id="email-error"
+                            class="error-message"
+                            role="alert"
+                            aria-live="polite">
+                        </span>
+
+                        <label for="message">
+                            Enter your message
+                            <span class="required-label" aria-label="required">*</span>
+                        </label>
+                        <textarea  
+                            type="text" 
+                            id="message" 
+                            name="message"
+                            required
+                            aria-required="true"
+                            aria-invalid="false"
+                            aria-describedby="message-error">
+                        </textarea>
+                        <span
+                            id="message-error"
+                            class="error-message"
+                            role="alert"
+                            aria-live="polite">
+                        </span>
+                    </fieldset>
+                    <p id="success-message" aria-live="polite" style="display:none;"></p>
+                    <button class="submitButton" aria-text="Submit button">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="assets/scripts/app.js"></script>
+</body>
+</html>
