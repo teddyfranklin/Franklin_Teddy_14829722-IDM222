@@ -143,7 +143,6 @@ html {
     border-right: none;
 }
 
-/* This is a needlessly complicated way to design a case study page. You could just use basic html and inline wrapping. */
 .contentArea {
     margin-left:  3rem;
     display: grid;
@@ -232,29 +231,65 @@ legend {
     background-color: var(--color-midred);
 }
 
-
-
 @media (max-width: 768px) {
 
     :root {
-    --text-body: 1.1rem;
-    --text-heading: 2rem;
-    --text-big-heading: 3rem;
-  }
+        --text-body: 1.1rem;
+        --text-heading: 2rem;
+        --text-big-heading: 3rem;
+    }
 
-  .desktop-buttons button {
-    display: none;
-  }
+  .contentContainer {
+        margin: 0; 
+        display: grid;
+        grid-template-columns: 2vw minmax(0vw, 8vw) minmax(0vw, 10vw) minmax(0vw, 10vw) minmax(20ch, 150ch);
+        grid-template-rows: 4rem min-content 4rem auto calc(100% - 2rem);
+    }
 
-  .menu-button {
-    display: block;
-    background: var(--accent-red);
-    color: var(--color-light);
-    border: var(color-light);
-    padding: .5rem 1rem;
-    font-family: var(--body-font);
-    font-size: var(--text-nav);
-}
+    .contentArea {
+        margin-top: 3rem;
+        margin-left:  3rem;
+        display: grid;
+        grid-column: 4 / 6;
+        grid-row: 4 / 6;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: subgrid;
+    }
+
+    .navigationContainer {
+        z-index: -1;
+        grid-column: 1 / 6;
+        grid-row: 3 / 4;
+        background-color: var(--color-darkmid);
+        color: var(--color-lightmid);
+        padding-right: 3rem;
+        writing-mode: horizontal-tb;
+    }
+
+    .titleText {
+        grid-column: 3 /6;
+        grid-row: 3 /4;
+        justify-self: center;
+        align-self: flex-start;
+        writing-mode: horizontal-tb;
+        color: var(--color-light);
+        flex-wrap: nowrap;
+        margin-bottom: 3rem;
+    }
+
+    .intro {
+        grid-column: 1 / 6;
+        grid-row: 1 / 3;
+        background-color: var(--color-midred);
+        color: var(--color-light);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        padding: 1rem;
+    }
 
     main {
         display: grid;
