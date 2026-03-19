@@ -12,17 +12,7 @@ const messageError = document.getElementById('message-error');
 
 const submitButton = document.querySelector('.submitButton');
 
-// DONT TOUCH THIS IT WORKS
-// firstNameInput.addEventListener('blur', function() {
-//     const value = firstNameInput.value.trim();
-//     if (value === '') {
-//         this.setAttribute('aria-invalid', 'true');
-//         firstNameError.textContent = 'First name is required';
-//         firstNameError.style.display = 'block';
-//     }
-// });
-
-// destructuring a struct. seems simpler to do this in js than C.
+// destructuring a struct. seems simpler to do this in js than in C
 const fields = [
     { input: firstNameInput, error: firstNameError, label: 'First name' },
     { input: lastNameInput,  error: lastNameError,  label: 'Last name' },
@@ -83,15 +73,6 @@ form.addEventListener('submit', function(event) {
         return;
     }
 });
-
-// submitButton.addEventListener('click', function(event) {
-//         if (invalidFields.length = 0) {
-//         input.reset();
-//         const successMessage = document.getElementById('success-message');
-//         successMessage.textContent = 'Your message has been sent successfully!';
-//         successMessage.style.display = 'block';
-//     }
-// });
 
 form.addEventListener('submit', function(event) {
     event.preventDefault();

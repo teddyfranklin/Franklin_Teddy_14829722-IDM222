@@ -30,25 +30,6 @@
     --font-size-h2: 2rem;
 }
 
-/* :root {
-    --color-dark: #0f0f0e;
-    --color-darkmid: #1b1b1b;
-    --color-mid: #fff34d;
-    --color-lightmid: #646464;
-    --color-light: #070707;
-    --color-red: #FF3030;
-    --color-lightred: #DF6060;
-    --color-midred: #d2f31a;
-    --color-violet: #805CFF;
-    --font-body: 'manRope';
-    --font-weight-body: 350;
-    --font-size-body: 1rem;
-    --font-weight-h1: 900;
-    --font-size-h1: 3rem;
-    --font-weight-h2: 700;
-    --font-size-h2: 2rem;
-} */
-
 html {
     font-family: 'manRope';
     background-color: var(--color-light);
@@ -111,7 +92,7 @@ img {
 .navigationContainer {
     z-index: -1;
     writing-mode: vertical-lr;
-    grid-column: 2 / 4;
+    grid-column: 2 / 3;
     grid-row: 1 / 7;
     background-color: var(--color-darkmid);
     color: var(--color-lightmid);
@@ -128,7 +109,7 @@ img {
 }
 
 
-/* I used claude here to help style the menus. This logic is super hacky and I will clean it up before the final */
+/* I used claude here to help style the menus.
 .intro .menu {
     display: flex;
     flex-direction: row;
@@ -187,9 +168,8 @@ img {
 }
 
 .contentArea img{
-    max-width: 100%;
-    object-fit: cover;
-    display: block;
+    width: 100%;
+    height: auto;
     min-width: 0;
     min-height: 0;
 }
@@ -202,20 +182,6 @@ img {
     --text-heading: 2rem;
     --text-big-heading: 3rem;
   }
-
-  .desktop-buttons button {
-    display: none;
-  }
-
-  .menu-button {
-    display: block;
-    background: var(--accent-red);
-    color: var(--color-light);
-    border: var(color-light);
-    padding: .5rem 1rem;
-    font-family: var(--body-font);
-    font-size: var(--text-nav);
-}
 
     main {
         display: grid;
