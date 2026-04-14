@@ -154,8 +154,7 @@ img {
     display: grid;
     grid-column: 4 / 6;
     grid-row: 4 / 6;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: 1fr 1fr;
     gap: 1rem;
 }
 
@@ -232,4 +231,12 @@ img {
         margin-top: 3rem;
         margin-right: 5vw;
     }
+
+    .contentArea {
+    display: grid;
+    grid-column: 4 / 6;
+    grid-row: 4 / 6;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
 } 
